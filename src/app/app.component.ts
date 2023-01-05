@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'to-do-list-udemy';
+  title = 'Lista zadań';
+
+  get footer(): string {
+    return '2023 © Lista zadań,All rights reserved.'
+  }
 }
