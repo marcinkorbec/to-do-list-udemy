@@ -9,6 +9,10 @@ export class AppComponent {
   title = 'Lista zadań';
 
   get footer(): string {
-    return '2023 © Lista zadań,All rights reserved.'
+    return ' © Lista zadań, All rights reserved.'
+  }
+
+  getDate(): number {
+    return new Date().getFullYear();
   }
 }
