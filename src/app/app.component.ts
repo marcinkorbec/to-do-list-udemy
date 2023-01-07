@@ -12,7 +12,7 @@ export class AppComponent {
     return ' © Lista zadań, All rights reserved.'
   }
 
-  getDate(): number {
-    return new Date().getFullYear();
+  getDate(): Date {
+    return new Date();
   }
 }
