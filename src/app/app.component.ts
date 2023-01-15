@@ -6,13 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  config: {[key: string]: string | Date } ;
+  config: { [key: string]: string | Date; } | undefined ;
 
   constructor() {
-    this.config = {
-      title: 'Lista zadań',
-      footer: '© Lista zadań, All rights reserved.',
-      date: new Date()
-    }
+    setTimeout(()=> {
+      this.config = {
+        title: 'Lista zadań',
+        footer: '© Lista zadań, All rights reserved.',
+        date: new Date()
+      }
+    }, 500)
   }
 }
