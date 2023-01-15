@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  config: {[key: string]: string | Date } | null =  null;
+  config: {[key: string]: string | Date } ;
 
   constructor() {
     this.config = {
