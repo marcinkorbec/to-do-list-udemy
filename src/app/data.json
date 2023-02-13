@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Siłownia",
+    "deadline": "2023-03-01",
+    "done": false
+  },
+  {
+    "name": "Sprzątanie kuwety",
+    "deadline": "2023-03-02",
+    "done": false
+  },
+  {
+    "name": "Nauka Angulara",
+    "deadline": "2023-03-03",
+    "done": false
+  },
+  {
+    "name": "Jada na rowerze",
+    "deadline": "2023-03-03",
+    "done": false
+  },
+  {
+    "name": "Pójście na zakupy",
+    "deadline": "2023-03-03",
+    "done": false
+  },
+  {
+    "name": "Pójście do lasu",
+    "deadline": "2023-03-03",
+    "done": false
+  },
+  {
+    "name": "Umycie garuszka",
+    "deadline": "2023-03-03",
+    "done": false
+  }
+]
