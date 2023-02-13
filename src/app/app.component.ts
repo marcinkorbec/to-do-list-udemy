@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Task } from './task'
+import data from './data.json'
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { Task } from './task'
 })
 export class AppComponent {
   config: { [key: string]: string | Date; } | undefined ;
-  tasks: Task[] = [];
+  tasks: Task[] = data;
 
   constructor() {
     setTimeout(()=> {
