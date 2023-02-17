@@ -1,5 +1,5 @@
 export interface Task {
-  name: string; //nazwa zadania
+  name: string | undefined; //nazwa zadania
   deadline: string;
   done: boolean;
 }
