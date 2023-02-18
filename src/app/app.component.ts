@@ -8,7 +8,6 @@ import data from './data.json'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  taskName: string | undefined;
   config: { [key: string]: string | Date; } | undefined ;
   tasks: Task[] = data;
 
@@ -26,15 +25,10 @@ export class AppComponent {
     this.tasks = [];
   }
 
-  onKeyUp(event: KeyboardEvent) {
-    const target = event.target as HTMLInputElement;
-    this.taskName = target.value;
-  }
-
-  createTasks() {
+  createTasks(name: string, date: string) {
     const task: Task = {
-      name: this.taskName,
-      deadline: '2023-03-02',
+      name: name,
+      deadline: date,
       done: false
     }
     this.tasks.push(task);
