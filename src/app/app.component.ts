@@ -8,7 +8,6 @@ import data from './data.json'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isNameInputEmpty = true;
   config: { [key: string]: string | Date; } | undefined ;
   tasks: Task[] = data;
 
@@ -26,10 +25,6 @@ export class AppComponent {
     this.tasks = [];
   }
 
-  onNameInputChange(event: Event) {
-    const target = event.target as HTMLInputElement;
-    this.isNameInputEmpty = target.value === null || target.value.length === 0;
-  }
   createTasks(name: string, date: string) {
     const task: Task = {
       name: name,
