@@ -17,6 +17,7 @@
       type="text"
       placeholder="Dodaj zadanie i datę wykonania"
       #nameInput
+      (input)="onNameInputChange($event)"
     />
     <input
       class="col s2 disabled"
@@ -28,6 +29,7 @@
       (click)="createTasks(nameInput.value, dateInput.value);
       nameInput.value='';
       dateInput.value=''"
+      [disabled]="isNameInputEmpty"
     >+</button>
   </div>
 
