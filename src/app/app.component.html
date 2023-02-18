@@ -50,7 +50,7 @@
 
   <h1>Dzisiaj brak zadań :-)</h1>
 
-  <button class="btn red" (click)="clearTasks()">Wyczyść</button>
+  <button class="btn red" (click)="clearTasks() " [disabled]="tasks.length === 0">Wyczyść</button>
 
   <footer class="page-footer mt-5">
     <div class="footer-copyright">
