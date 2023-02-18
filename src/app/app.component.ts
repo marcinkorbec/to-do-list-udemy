@@ -26,8 +26,9 @@ export class AppComponent {
     this.tasks = [];
   }
 
-  onNameInputChange(event: any) {
-    this.isNameInputEmpty = event.target.value.length < 1;
+  onNameInputChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.isNameInputEmpty = target.value === null || target.value.length === 0;
   }
   createTasks(name: string, date: string) {
     const task: Task = {
